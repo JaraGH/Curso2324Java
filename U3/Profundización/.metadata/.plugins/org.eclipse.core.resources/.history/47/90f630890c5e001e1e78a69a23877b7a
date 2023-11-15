@@ -1,0 +1,22 @@
+package main;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		
+		
+		System.out.println("Teclea dos números enteros...");
+		int n1 = entrada.nextInt(); //5
+		int n2 = entrada.nextInt(); //4
+		
+		System.out.printf("%d es mayor que %d ? %b\n", n1, n2, (n1>n2));
+
+		
+		
+	}
+
+}

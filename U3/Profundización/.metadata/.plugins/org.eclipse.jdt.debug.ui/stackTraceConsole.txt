@@ -1,0 +1,3 @@
+if (numero % divisor==0) {
+//				esPrimo=false;
+//			}

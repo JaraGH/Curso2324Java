@@ -1,0 +1,32 @@
+package principal;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+	
+		int numero=20;
+		
+		int divisor=2;
+		
+		boolean esPrimo = true;
+		while (divisor<=(numero/2) && esPrimo==true) {
+			
+			if (numero % divisor==0) {
+				esPrimo=false;
+			}
+			divisor++;
+			
+		}
+		
+		if (esPrimo==true)
+			System.out.printf("%d es primo", numero);
+		else
+			System.out.printf("%d no es primo", numero);
+		
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package main;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		System.out.printf("El mayor entre %d y "
+				+ "%d es %d\n", 5,10, obtenerMayor(5, 10));
+		int a=8000, b=2000;
+		System.out.printf("El mayor entre %d y "
+				+ "%d es %d\n", 5,10, obtenerMayor(a, b));
+
+	}
+
+	static int obtenerMayor(int n1, int n2) {
+		return (n1>n2)? n1: n2;
+//		if (n1>n2)
+//			return n1;
+//		else 
+//			return n2;
+	}
+}

@@ -1,0 +1,23 @@
+package main;
+
+import java.util.Random;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		for (int i = 1; i <=15; i++) {
+			System.out.printf("%d es primo? %b\n", i , esPrimo(i));
+		}
+		
+	}
+
+	static boolean esPrimo (int n) {
+		
+		for (int i = 2; i <=n/2; i++) {
+			if (n%i==0)
+				return false;
+		}
+		return true;
+	}
+}

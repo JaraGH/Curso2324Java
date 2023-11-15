@@ -1,0 +1,41 @@
+package principal;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+	
+		for (int i = 1; i <=10000; i++) {
+			
+			//llamada
+			boolean primo = esPrimo(i);// true-> primo, false-->no primo
+			
+			if (primo) {
+				System.out.printf("%d es primo \n", i);
+			} else {
+				System.out.printf("%d no es primo \n", i);
+			}
+		}
+		
+	}
+	
+	
+	
+	static boolean esPrimo (int numero) {
+		
+		if (numero==1)
+			return false;
+		else {
+			for (int i=2;i<=numero/2;i++) {
+				int resto=numero%i;
+				if (resto==0)
+					return false;
+			}
+			return true;
+		}
+		
+	}
+
+}
